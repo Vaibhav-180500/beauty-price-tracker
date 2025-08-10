@@ -1,0 +1,12 @@
+name: 'beauty_price_tracker'
+version: '1.0.0'
+config-version: 2
+profile: 'beauty_price_tracker'
+model-paths: ['dbt/models']
+analysis-paths: ['analyses']
+seed-paths: ['dbt/seeds']
+macro-paths: ['dbt/macros']
+snapshot-paths: ['dbt/snapshots']
+models:
+  beauty_price_tracker:
+    +materialized: view

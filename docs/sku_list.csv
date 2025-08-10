@@ -1,0 +1,32 @@
+sku_id,brand,product_name,retailer,product_url,currency
+SKU-001,NUXE,Huile Prodigieuse Or 50ml,Sephora,https://www.sephora.fr/p/huile-prodigieuse-or---huile-seche-multi-fonctions-visage--corps-P3288012.html,EUR
+SKU-001,NUXE,Huile Prodigieuse Or 50ml,Carrefour,https://www.carrefour.fr/p/huile-corps-visage-cheveux-hydrate-satine-illumine-or-florale-nuxe-3264680038334,EUR
+SKU-001,NUXE,Huile Prodigieuse Or 50ml,Amazon,https://www.amazon.fr/Huile-Prodigieuse-Vaporisateur-Traitement-Corps/dp/B06WW4GM1D,EUR
+
+SKU-002,NUXE,Huile Prodigieuse Néroli 100ml,Sephora,https://www.sephora.fr/p/huile-prodigieuse-neroli---huile-seche-multi-fonctions-100-ml-P10025392.html,EUR
+SKU-002,NUXE,Huile Prodigieuse Néroli 100ml,Carrefour,https://www.carrefour.fr/p/huile-pour-le-corps-prodigieuse-neroli-nuxe-3264680024993,EUR
+SKU-002,NUXE,Huile Prodigieuse Néroli 100ml,Amazon,https://www.amazon.fr/Nuxe-Prodigieuse-Prodigieux-Shampoing-Brillance/dp/B0CXZXJ8Z2,EUR
+
+SKU-003,BIODERMA,Atoderm Huile de Douche 1L,Sephora,https://www.sephora.fr/p/atoderm-huile-de-douche---soin-lavant-hydratant-peaux-sensibles-visage-et-corps-P10045426.html,EUR
+SKU-003,BIODERMA,Atoderm Huile de Douche 1L,Carrefour,https://www.carrefour.fr/p/huile-de-douche-atoderm-bioderma-3401399373974,EUR
+SKU-003,BIODERMA,Atoderm Huile de Douche 1L,Amazon,https://www.amazon.fr/Bioderma-Atoderm-Huile-douche-litre/dp/B00FFBSP8I,EUR
+
+SKU-004,BIODERMA,Atoderm Gel Douche Éco-Recharge 1L,Sephora,https://www.sephora.fr/p/atoderm-gel-douche---eco-recharge-P10045423.html,EUR
+SKU-004,BIODERMA,Atoderm Gel Douche Éco-Recharge 1L,Carrefour,https://www.carrefour.fr/p/gel-douche-eco-recharge-atoderm-bioderma-3701129804476,EUR
+SKU-004,BIODERMA,Atoderm Gel Douche Éco-Recharge 1L,Amazon,https://www.amazon.fr/Bioderma-Atoderm-Douche-eco-recharge/dp/B0B2T58L3L,EUR
+
+SKU-005,BIODERMA,Créaline (Sensibio) H2O Micellaire 500ml,Sephora,https://www.sephora.fr/p/crealine-h2o---eau-micellaire-demaquillante-visage-pour-peaux-sensibles-P10045428.html,EUR
+SKU-005,BIODERMA,Créaline (Sensibio) H2O Micellaire 500ml,Carrefour,https://www.carrefour.fr/p/eau-micellaire-crealine-h2o-peaux-sensibles-bioderma-3701129805213,EUR
+SKU-005,BIODERMA,Créaline (Sensibio) H2O Micellaire 500ml,Amazon,https://www.amazon.fr/BIODERMA-Sensibio-H2O-micellaire-d%C3%A9maquillante/dp/B00AVE22XS,EUR
+
+SKU-006,BIODERMA,Sébium Gel Moussant 200ml,Sephora,https://www.sephora.fr/p/sebium-gel-moussant---gel-nettoyant-purifiant-peau-grasse-P10045432.html,EUR
+SKU-006,BIODERMA,Sébium Gel Moussant 200ml,Carrefour,https://www.carrefour.fr/p/gel-sebium-purifiant-bioderma-3401578653709,EUR
+SKU-006,BIODERMA,Sébium Gel Moussant 200ml,Amazon,https://www.amazon.fr/S%C3%A9bium-moussant-nettoyant-gel-purifiant/dp/B000TUNMW4,EUR
+
+SKU-007,SANOFLORE,Aqua Magnifica Lotion 200ml,Sephora,https://www.sephora.fr/p/aqua-magnifica---essence-botanique-perfectrice-de-peau-certifie-bio-P2500040.html,EUR
+SKU-007,SANOFLORE,Aqua Magnifica Lotion 200ml,Carrefour,https://www.carrefour.fr/p/lotion-visage-perfectrice-de-peau-aqua-magnifica-bio-sanoflore-3337873401212,EUR
+SKU-007,SANOFLORE,Aqua Magnifica Lotion 200ml,Amazon,https://www.amazon.fr/Sanoflore-Magnifica-Essence-Botanique-Perfectrice/dp/B00FW5ED4W,EUR
+
+SKU-008,AVENE,Cleanance Gel Nettoyant (various sizes),Sephora,https://www.sephora.fr/AVENE-HubPage.html,EUR
+SKU-008,AVENE,Cleanance Gel Nettoyant 300ml,Carrefour,https://www.carrefour.fr/p/gel-nettoyant-cleanance-visage-et-corps-eau-thermale-avene-3282779349680,EUR
+SKU-008,AVENE,Cleanance Gel Nettoyant 100ml (status may vary),Amazon,https://www.amazon.fr/Avene-Cleanance-nettoyant-sans-savon/dp/B07N762J2P,EUR

@@ -1,0 +1,4 @@
+- Respect each site's robots.txt and Terms of Service.
+- Start ≤ 1 request every 10–15 seconds per retailer.
+- Cache HTML locally while prototyping; avoid repeated hits.
+- Do not collect PII; store only product/price/availability.
