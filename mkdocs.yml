@@ -12,6 +12,7 @@ nav:
   - Setup:
       - "Day 0 (Easy)": setup/day0-easy.md
       - "Day 0 (Technical)": setup/day0-technical.md
+      - "Legal notes": legal-notes.md
   - PRD:
       - "PRD (Easy)": prd/prd-easy.md
       - "PRD (Technical)": prd/prd-technical.md
