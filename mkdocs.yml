@@ -1,0 +1,19 @@
+site_name: Beauty Price Tracker — Docs
+site_url: https://Vaibhav-180500.github.io/beauty-price-tracker/
+repo_url: https://github.com/Vaibhav-180500/beauty-price-tracker
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.top
+    - content.code.copy
+nav:
+  - Home: index.md
+  - Setup:
+      - "Day 0 (Easy)": setup/day0-easy.md
+      - "Day 0 (Technical)": setup/day0-tech.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
