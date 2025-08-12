@@ -1,0 +1,97 @@
+# selectors.yml — per-retailer parsing hints (fill/adjust after inspecting pages)
+# This file is derived from your SKU registry with retailers: amazon_fr, carrefour_fr, sephora_fr
+# Notes:
+# - Keep 1 worker per domain; respect rate limits and robots.txt.
+# - Use CSS selectors where possible; fallback to XPath if needed.
+
+amazon_fr:
+  enabled: true
+  rate_limit_seconds: 15
+  user_agent: "BeautyPriceTracker/0.1 (contact: you@example.com)"
+
+  # Prefer the main Buy Box price under apex/corePrice. Falls back if one is missing.
+  price_selector: "#apex_desktop .a-price .a-offscreen, #corePrice_feature_div .a-price .a-offscreen"
+  
+  # Crossed-out list price / compare-at. Often not what you want as the current price.
+  sale_price_selector: "#apex_desktop .a-price .a-text-price .a-offscreen, #corePrice_feature_div .a-price .a-text-price .a-offscreen"
+  
+  # Discount badge like "-35%" (if present)
+  discount_selector: "#apex_desktop .savingsPercentage, #corePrice_feature_div .savingsPercentage, .reinventPriceToPayMargin .savingsPercentage"
+
+  # Availability area is stable; grab any text node inside
+  availability_selector: "#availability .a-color-success, #availability .a-color-state, #availability span"
+  
+   # Accept FR or EN (in case UI is in English). In my case parser can match either.
+  in_stock_text: "En stock|In stock"
+  oos_text: "Actuellement indisponible|Currently unavailable"
+  price_regex: "(\d+[\.,]\d{2})"
+  discount_regex: "(-?\d{1,3})\s*%"
+  
+  currency_hint: "EUR"
+  notes: "Amazon DOM varies by seller; ensure the URL pins the correct variant/size."
+
+carrefour_fr:
+  enabled: true
+  rate_limit_seconds: 15
+  user_agent: "BeautyPriceTracker/0.1 (contact: you@example.com)"
+  
+   # PRICE: main amount on PDP
+  price_selector: "div[data-test='product_price_amount_main'], .product_price_amount_main, .product-price [class*='amount']"  
+  
+  sale_price_selector: ".product-price [class*='strike'], .ds-line-through, [class*='price-was']"
+
+  # DISCOUNT BADGE like “-35%” when present
+  discount_selector: "[class*='discount'], [class*='promo'], .ds-badge.-discount"
+
+  availability_selector: "button[data-test*='add-to-cart'], button[data-testid*='add-to-cart'], [data-test='post-add-to-cart'], [class*='add-to-cart']"
+  in_stock_text: "Ajouter au panier|Voir les options d'achat|Voir les options d’achat|Add to cart|Add to basket|See buying options|See purchase options"
+  oos_text: "Indisponible|Rupture|Victime de son succès|Unavailable|Out of stock|Sold out|Temporarily unavailable"
+  price_regex: "(\d+[\.,]\d{2})"
+  discount_regex: "(-?\\d{1,3})\\s*%"
+
+  currency_hint: "EUR"
+  notes: "Carrefour PDPs sometimes render client-side; allow a few seconds before parsing if using headless."
+
+sephora_fr:
+  enabled: true
+  rate_limit_seconds: 15
+  user_agent: "BeautyPriceTracker/0.1 (contact: you@example.com)"
+  price_selector: >
+    .product-price .price-sales,
+    [data-comp='Price'] .Text,
+    .Price .Text,
+    [itemprop='price']
+  sale_price_selector: >
+    .product-price .price-standard,
+    .Price .is-crossed,
+    [data-testid='price-was'],
+    [class*='strike']
+
+  discount_selector: >
+    [data-testid='promo-badge'],
+    .Badge--discount,
+    [class*='discount'],
+    [class*='promotion']
+  
+  # UNIT PRICE like "11,20€ / 100ml" (optional but nice to store)
+  unit_price_selector: >
+    .unit-price,
+    [data-testid='unit-price'],
+    [class*='unit-price']
+
+  availability_selector: >
+    [data-testid='pdp-availability'],
+    .product-availability,
+    [class*='availability'],
+    [data-test*='availability'],
+    [data-testid*='availability']
+  
+  in_stock_text: "En stock|Disponible|In stock|Available"
+  oos_text: "Rupture|Indisponible|Victime de son succès|Out of stock|Unavailable|Sold out"
+
+  price_regex: "(\d+[\.,]\d{2})"
+  discount_regex: "(-?\\d{1,3})\\s*%"
+  unit_price_regex: "(\d+[\\.,]\d{2})\\s*€?\\s*/\\s*(\d+)\s*(ml|g)"
+  currency_hint: "EUR"
+  
+  notes: "Sephora often has multiple sizes/variants on the same PDP; keep URL + variant_id consistent."

@@ -1,0 +1,61 @@
+sku_id,category,subcategory,brand,product_name,size_value,size_unit,variant_id,retailer,product_url,currency
+HAIR-001,Haircare,Treatment,Olaplex,No.3 Hair Perfector,100,ml,,sephora_fr,https://www.sephora.fr/p/no.-3-hair-perfector-P2526003.html,EUR
+HAIR-001,Haircare,Treatment,Olaplex,No.3 Hair Perfector,100,ml,,amazon_fr,https://www.amazon.fr/dp/B08TWTQDCX,EUR
+HAIR-002,Haircare,Shampoo,Olaplex,No.4 Bond Maintenance Shampoo,250,ml,,sephora_fr,https://www.sephora.fr/p/no.-4-bond-maintenance-shampoo---shampoing-P5727043.html,EUR
+HAIR-002,Haircare,Shampoo,Olaplex,No.4 Bond Maintenance Shampoo,250,ml,,amazon_fr,https://www.amazon.fr/dp/B08TWQ37XF,EUR
+HAIR-003,Haircare,Oil,Kérastase,Elixir Ultime L’Huile Originale,100,ml,,sephora_fr,https://www.sephora.fr/p/elixir-ultime-l-huile-originale---huile-capillaire-P3710009.html,EUR
+HAIR-003,Haircare,Oil,Kérastase,Elixir Ultime L’Huile Originale,100,ml,,amazon_fr,https://www.amazon.fr/dp/B07STFQQKC,EUR
+HAIR-004,Haircare,Shampoo,Redken,All Soft Shampoo,300,ml,,sephora_fr,https://www.sephora.fr/p/all-soft-shampoo---shampoing-douceur-absolute-P10027755.html,EUR
+HAIR-004,Haircare,Shampoo,Redken,All Soft Shampoo,300,ml,,amazon_fr,https://www.amazon.fr/dp/B000CD3C8C,EUR
+HAIR-005,Haircare,Treatment,Moroccanoil,Treatment Original,100,ml,,sephora_fr,https://www.sephora.fr/p/treatment---huile-capillaire-soin-P10011158.html,EUR
+HAIR-005,Haircare,Treatment,Moroccanoil,Treatment Original,100,ml,,amazon_fr,https://www.amazon.fr/dp/B005K0Z8EO,EUR
+HAIR-006,Haircare,Shampoo,L’Oréal Paris,Elseve Total Repair 5 Shampoo,300,ml,,carrefour_fr,https://www.carrefour.fr/p/shampooing-repair-5-rituel-reparation-intense-elseve-l-oreal-paris-3600523644298,EUR
+HAIR-006,Haircare,Shampoo,L’Oréal Paris,Elseve Total Repair 5 Shampoo,300,ml,,amazon_fr,https://www.amazon.fr/dp/B00P8BTZ60,EUR
+HAIR-007,Haircare,Shampoo,Garnier,Ultra Doux Argan & Camélia Shampoo,300,ml,,carrefour_fr,https://www.carrefour.fr/p/shampooing-huile-d-argan-et-de-camelia-ultra-doux-garnier-3600541906931,EUR
+HAIR-007,Haircare,Shampoo,Garnier,Ultra Doux Argan & Camélia Shampoo,300,ml,,amazon_fr,https://www.amazon.fr/dp/B01N1V9L1X,EUR
+HAIR-008,Haircare,Shampoo,L’Oréal Paris,Elseve Dream Long Shampoo,300,ml,,carrefour_fr,https://www.carrefour.fr/p/shampooing-reconstructeur-dream-long-elseve-l-oreal-paris-3600524103927,EUR
+HAIR-008,Haircare,Shampoo,L’Oréal Paris,Elseve Dream Long Shampoo,300,ml,,amazon_fr,https://www.amazon.fr/dp/B08N6J5GJ6,EUR
+HAIR-009,Haircare,Shampoo,Head & Shoulders,Classic Clean Shampoo,300,ml,,carrefour_fr,https://www.carrefour.fr/p/shampooing-classic-clean-head-shoulders-5410076969530,EUR
+HAIR-009,Haircare,Shampoo,Head & Shoulders,Classic Clean Shampoo,300,ml,,amazon_fr,https://www.amazon.fr/dp/B07WRQK9L9,EUR
+HAIR-010,Haircare,Shampoo,Pantene,Repair & Protect Shampoo,250,ml,,carrefour_fr,https://www.carrefour.fr/p/shampooing-repair-protect-pantene-4084500686727,EUR
+HAIR-010,Haircare,Shampoo,Pantene,Repair & Protect Shampoo,250,ml,,amazon_fr,https://www.amazon.fr/dp/B00V3ON3EU,EUR
+SKIN-001,Skincare,Serum,The Ordinary,Niacinamide 10% + Zinc 1%,30,ml,,sephora_fr,https://www.sephora.fr/p/niacinamide-10-zinc-1---serum-anti-imperfections-P10027945.html,EUR
+SKIN-001,Skincare,Serum,The Ordinary,Niacinamide 10% + Zinc 1%,30,ml,,amazon_fr,https://www.amazon.fr/dp/B0F534GN8V,EUR
+SKIN-002,Skincare,Moisturizer,Clinique,Dramatically Different Moisturizing Gel,125,ml,,sephora_fr,https://www.sephora.fr/p/dramatically-different-moisturizing-gel---gel-hydratant-P1353048.html,EUR
+SKIN-002,Skincare,Moisturizer,Clinique,Dramatically Different Moisturizing Gel,125,ml,,amazon_fr,https://www.amazon.fr/dp/B00BVO9NMK,EUR
+SKIN-003,Skincare,Serum,Estée Lauder,Advanced Night Repair Serum,50,ml,,sephora_fr,https://www.sephora.fr/p/advanced-night-repair---serum-complexe-regeneration-intense-P10010128.html,EUR
+SKIN-003,Skincare,Serum,Estée Lauder,Advanced Night Repair Serum,50,ml,,amazon_fr,https://www.amazon.fr/dp/B08DHQCGH9,EUR
+SKIN-004,Skincare,Cleanser,La Roche-Posay,Effaclar Gel Moussant Purifiant,400,ml,,carrefour_fr,https://www.carrefour.fr/p/gel-effaclar-gel-moussant-purifiant-la-roche-posay-3337875876407,EUR
+SKIN-004,Skincare,Cleanser,La Roche-Posay,Effaclar Gel Moussant Purifiant,400,ml,,amazon_fr,https://www.amazon.fr/dp/B003JSEGNC,EUR
+SKIN-005,Skincare,Cleanser,CeraVe,Hydrating Cleanser (Crème Lavante),236,ml,,carrefour_fr,https://www.carrefour.fr/p/gel-nettoyant-visage-moussant-cerave-3337875597197,EUR
+SKIN-005,Skincare,Cleanser,CeraVe,Hydrating Cleanser (Crème Lavante),236,ml,,amazon_fr,https://www.amazon.fr/dp/B07C5R51Q9,EUR
+SKIN-006,Skincare,Moisturizer,Nivea,Crème (Blue Tin),150,ml,,carrefour_fr,https://www.carrefour.fr/p/creme-hydratante-nourrissante-visage-corps-mains-nivea-4005808925124,EUR
+SKIN-006,Skincare,Moisturizer,Nivea,Crème (Blue Tin),150,ml,,amazon_fr,https://www.amazon.fr/dp/B007IDWHRQ,EUR
+SKIN-007,Skincare,Serum,Vichy,Minéral 89 Booster,50,ml,,carrefour_fr,https://www.carrefour.fr/p/serum-visage-toutes-peaux-fortifiant-hydratant-mineral-89-vichy-laboratoires-3337875543248,EUR
+SKIN-007,Skincare,Serum,Vichy,Minéral 89 Booster,50,ml,,amazon_fr,https://www.amazon.fr/dp/B075DB6276,EUR
+SKIN-008,Skincare,Micellar Water,Bioderma,Sensibio (Créaline) H2O,500,ml,,carrefour_fr,https://www.carrefour.fr/p/eau-micellaire-crealine-h2o-peaux-sensibles-bioderma-3701129805213,EUR
+SKIN-008,Skincare,Micellar Water,Bioderma,Sensibio (Créaline) H2O,500,ml,,amazon_fr,https://www.amazon.fr/dp/B00AVE22XS,EUR
+SKIN-009,Skincare,Moisturizer,L’Oréal Paris,Revitalift Day Cream,50,ml,,carrefour_fr,https://www.carrefour.fr/p/creme-de-jour-revitalift-l-oreal-paris-3600524038588,EUR
+SKIN-009,Skincare,Moisturizer,L’Oréal Paris,Revitalift Day Cream,50,ml,,amazon_fr,https://www.amazon.fr/dp/B00FQZ4T60,EUR
+SKIN-010,Skincare,Micellar Water,Garnier,Eau Micellaire Peaux Sensibles,400,ml,,carrefour_fr,https://www.carrefour.fr/p/eau-micellaire-peaux-sensibles-garnier-3600540744046,EUR
+SKIN-010,Skincare,Micellar Water,Garnier,Eau Micellaire Peaux Sensibles,400,ml,,amazon_fr,https://www.amazon.fr/dp/B00M17W2M2,EUR
+MAKE-001,Makeup,Mascara,Too Faced,Better Than Sex Mascara,8,ml,Black,sephora_fr,https://www.sephora.fr/p/better-than-sex-mascara-P1501003.html,EUR
+MAKE-001,Makeup,Mascara,Too Faced,Better Than Sex Mascara,8,ml,Black,amazon_fr,https://www.amazon.fr/dp/B00P0Q0T28,EUR
+MAKE-002,Makeup,Mascara,Benefit,Roller Lash,8.5,ml,Black,sephora_fr,https://www.sephora.fr/p/roller-lash-mascara-P2101001.html,EUR
+MAKE-002,Makeup,Mascara,Benefit,Roller Lash,8.5,ml,Black,amazon_fr,https://www.amazon.fr/s?k=roller+lash+benefit&ref=nb_sb_noss,EUR
+MAKE-003,Makeup,Concealer,NARS,Radiant Creamy Concealer,6,ml,Vanilla,sephora_fr,https://www.sephora.fr/p/radiant-creamy-concealer---anti-cernes-eclat-P1281016.html,EUR
+MAKE-003,Makeup,Concealer,NARS,Radiant Creamy Concealer,6,ml,Vanilla,amazon_fr,https://www.amazon.fr/dp/B00BM1WKT0,EUR
+MAKE-004,Makeup,Liquid Lip,Huda Beauty,Liquid Matte,4.2,ml,Bombshell,sephora_fr,https://www.sephora.fr/p/liquid-matte-rouge-a-levres-mat-longue-tenue-ultra-confort-et-sans-transfert-P10023807.html,EUR
+MAKE-004,Makeup,Liquid Lip,Huda Beauty,Liquid Matte,4.2,ml,Bombshell,amazon_fr,https://www.amazon.fr/dp/B0DL6PBYMJ,EUR
+MAKE-005,Makeup,Foundation,Maybelline,Fit Me Matte + Poreless Foundation,30,ml,120 Classic Ivory,carrefour_fr,https://www.carrefour.fr/p/fond-de-teint-liquide-matifiant-teinte-beige-rose-120-fit-me-maybelline-new-york-3600531324520,EUR
+MAKE-005,Makeup,Foundation,Maybelline,Fit Me Matte + Poreless Foundation,30,ml,120 Classic Ivory,amazon_fr,https://www.amazon.fr/dp/B074MB778R,EUR
+MAKE-006,Makeup,Foundation,L’Oréal Paris,Infaillible Fresh Wear Foundation,30,ml,140 Golden Beige,carrefour_fr,https://www.carrefour.fr/p/fond-de-teint-liquide-longue-tenue-teinte-beige-dore-140-infaillible-l-oreal-paris-3600523614493,EUR
+MAKE-006,Makeup,Foundation,L’Oréal Paris,Infaillible Fresh Wear Foundation,30,ml,140 Golden Beige,amazon_fr,https://www.amazon.fr/dp/B00HWR50JK,EUR
+MAKE-007,Makeup,Liquid Lip,Bourjois,Rouge Edition Velvet,7.7,ml,07 Nude-ist,carrefour_fr,https://www.carrefour.fr/p/rouge-a-levres-007-edition-velvet-nude-ist-bourjois-3052503260716,EUR
+MAKE-007,Makeup,Liquid Lip,Bourjois,Rouge Edition Velvet,7.7,ml,07 Nude-ist,amazon_fr,https://www.amazon.fr/dp/B00J5ME5N2,EUR
+MAKE-008,Makeup,Mascara,L’Oréal Paris,Lash Paradise Mascara,6.4,ml,Black,carrefour_fr,https://www.carrefour.fr/p/mascara-volume-noir-paradise-voluminous-01-l-oreal-paris-3600523503285,EUR
+MAKE-008,Makeup,Mascara,L’Oréal Paris,Lash Paradise Mascara,6.4,ml,Black,amazon_fr,https://www.amazon.fr/dp/B06XDQ84NF,EUR
+MAKE-009,Makeup,Mascara,Maybelline,Lash Sensational Sky High Mascara,7.2,ml,Very Black,carrefour_fr,https://www.carrefour.fr/p/mascara-volume-longueur-noir-intense-sky-high-sensationnel-maybelline-new-york-0000030166967,EUR
+MAKE-009,Makeup,Mascara,Maybelline,Lash Sensational Sky High Mascara,7.2,ml,Very Black,amazon_fr,https://www.amazon.fr/dp/B08WR5CPNB,EUR
+MAKE-010,Makeup,Blush,NARS,Blush,4.8,g,Orgasm,sephora_fr,https://www.sephora.fr/p/talc-free-blush---blush-P10058831.html,EUR
+MAKE-010,Makeup,Blush,NARS,Blush,4.8,g,Orgasm,amazon_fr,https://www.amazon.fr/dp/B000PVPEFU,EUR
