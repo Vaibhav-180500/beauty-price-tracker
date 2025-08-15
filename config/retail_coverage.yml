@@ -1,6 +1,8 @@
 # retail_coverage.yml — cadence, rate-limits, and page counts
 # Derived from your Top-30 CSV on 2025-08-12
+
 categories: [Haircare, Skincare, Makeup]
+
 top_set:
   description: "Top-30 SKUs (10 per category). Each SKU tracked on 2 retailers → 60 priority PDPs."
   cadence_cron: "30 0,6,12,18 * * *"   # 00:30, 06:30, 12:30, 18:30 Europe/Paris
@@ -8,6 +10,7 @@ top_set:
   jitter_pct: 20
   pages: 60
   freshness_slo_hours: 6
+
 rest:
   description: "Additional PDPs to reach ≈300 total; daily refresh."
   cadence_cron: "0 3 * * *"
@@ -15,31 +18,39 @@ rest:
   jitter_pct: 20
   pages: 240
   freshness_slo_hours: 24
+
 retailers:
-  - name: amazon_fr
-      rate_limit_seconds: 15
-      concurrency: 1
-      timeout_seconds: 10
-      retries:
-        attempts: 2
-        backoff_seconds: [2, 4]
-  - name: carrefour_fr
-      rate_limit_seconds: 15
-      concurrency: 1
-      timeout_seconds: 10
-      retries:
-        attempts: 2
-        backoff_seconds: [2, 4]
-  - name: sephora_fr
-      rate_limit_seconds: 15
-      concurrency: 1
-      timeout_seconds: 10
-      retries:
-        attempts: 2
-        backoff_seconds: [2, 4]
+  amazon_fr:
+    enabled: true
+    rate_limit_seconds: 15
+    concurrency: 1
+    timeout_seconds: 10
+    retries:
+      attempts: 2
+      backoff_seconds: [2, 4]
+
+  sephora_fr:
+    enabled: true
+    rate_limit_seconds: 15
+    concurrency: 1
+    timeout_seconds: 10
+    retries:
+      attempts: 2
+      backoff_seconds: [2, 4]
+
+  carrefour_fr:
+    enabled: false   # parked for v2 (store context / anti-bot returning 404/403)
+    rate_limit_seconds: 15
+    concurrency: 1
+    timeout_seconds: 10
+    retries:
+      attempts: 2
+      backoff_seconds: [2, 4]
+
 thresholds:
   price_change_pct: 0.01   # 1% threshold for price_up/price_down
   block_rate_max: 0.02     # if >2% 4xx/5xx, reduce cadence for that domain
+
 ethics:
   user_agent: "BeautyPriceTracker/0.1 (contact: you@example.com)"
   respect_robots_txt: true
