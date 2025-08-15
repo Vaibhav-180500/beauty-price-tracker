@@ -19,11 +19,11 @@ amazon_fr:
   discount_selector: "#apex_desktop .savingsPercentage, #corePrice_feature_div .savingsPercentage, .reinventPriceToPayMargin .savingsPercentage"
 
   # Availability area is stable; grab any text node inside
-  availability_selector: "#availability .a-color-success, #availability .a-color-state, #availability span"
+  availability_selector: "#availability, #availability .a-color-success, #availability .a-color-state, #add-to-cart-button, #buy-now-button, form#addToCart"
   
    # Accept FR or EN (in case UI is in English). In my case parser can match either.
-  in_stock_text: "En stock|In stock"
-  oos_text: "Actuellement indisponible|Currently unavailable"
+  in_stock_text: "En stock|In stock|Expédié sous|Usually ships|Disponible"
+  oos_text: "Actuellement indisponible|Currently unavailable|Temporarily out of stock|Rupture de stock"
   price_regex: '(\d+[\.,]\d{2})'
   discount_regex: '(-?\d{1,3})\s*%'
   
