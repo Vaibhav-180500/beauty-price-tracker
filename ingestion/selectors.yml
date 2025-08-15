@@ -41,7 +41,7 @@ amazon_fr:
   notes: "Amazon DOM varies by seller; ensure the URL pins the correct variant/size."
 
 carrefour_fr:
-  enabled: true
+  enabled: false
   rate_limit_seconds: 20
   user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
   
