@@ -9,15 +9,25 @@ amazon_fr:
   rate_limit_seconds: 20
   user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 
-  # Prefer the main Buy Box price under apex/corePrice. Falls back if one is missing.
-  price_selector: "#apex_desktop .a-price .a-offscreen, #corePrice_feature_div .a-price .a-offscreen"
+  # PRICE: main PDP amount (several fallbacks)
+  price_selector: >
+    div[data-test='product_price_amount_main'],
+    .product_price_amount_main,
+    .product-price [class*='amount'],
+    [class*='price'] [class*='amount']
   
-  # Crossed-out list price / compare-at. Often not what you want as the current price.
-  sale_price_selector: "#apex_desktop .a-price .a-text-price .a-offscreen, #corePrice_feature_div .a-price .a-text-price .a-offscreen"
+   # LIST/STRIKE price
+  sale_price_selector: >
+    .product-price [class*='strike'],
+    .ds-line-through,
+    [class*='price-was']
   
   # Discount badge like "-35%" (if present)
-  discount_selector: "#apex_desktop .savingsPercentage, #corePrice_feature_div .savingsPercentage, .reinventPriceToPayMargin .savingsPercentage"
-
+  discount_selector: >
+    [class*='discount'],
+    [class*='promo'],
+    .ds-badge.-discount
+    
   # Availability area is stable; grab any text node inside
   availability_selector: "#availability, #availability .a-color-success, #availability .a-color-state, #add-to-cart-button, #buy-now-button, form#addToCart"
   
