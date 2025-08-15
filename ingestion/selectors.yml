@@ -89,19 +89,20 @@ sephora_fr:
     [data-testid='unit-price'],
     [class*='unit-price']
 
-  # Availability area candidates (Sephora wording varies FR/EN)
+  # Availability: target the real add-to-cart button + safe fallbacks
   availability_selector: >
     button#add-to-cart,
-    form[id^="dwfrm_product_addtocart"],
+    button[name="add"],
+    button[data-event="addToCart"],
+    form[id^="dwfrm_product_addtocart"] button[type="submit"],
+    #dwfrm_product_addtocart,
     .product-stock-content,
     .product__stock,
-    .product-info,
     .product-purchase,
     [class*="availability"],
     [data-test*="availability"],
     [data-test*="stock"]
 
-  # Text-based signals (FR/EN)
   in_stock_text: "Ajouter au panier|En stock|Disponible|In stock|Available"
   oos_text: "Rupture|Victime de son succès|Indisponible|Out of stock|Unavailable|Sold out|Me prévenir|Notify me"
   
