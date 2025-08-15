@@ -91,12 +91,20 @@ sephora_fr:
 
   # Availability area candidates (Sephora wording varies FR/EN)
   availability_selector: >
-    .product-info, .product__stock, .pdp-cta, .product-purchase,
-    [class*="availability"], [data-test*="availability"], [data-test*="stock"]
-    
-  in_stock_text: "En stock|Disponible|En magasin|In stock|Available"
-  oos_text: "Rupture|Victime de son succès|Indisponible|Out of stock|Unavailable|Sold out"
+    button#add-to-cart,
+    form[id^="dwfrm_product_addtocart"],
+    .product-stock-content,
+    .product__stock,
+    .product-info,
+    .product-purchase,
+    [class*="availability"],
+    [data-test*="availability"],
+    [data-test*="stock"]
 
+  # Text-based signals (FR/EN)
+  in_stock_text: "Ajouter au panier|En stock|Disponible|In stock|Available"
+  oos_text: "Rupture|Victime de son succès|Indisponible|Out of stock|Unavailable|Sold out|Me prévenir|Notify me"
+  
   price_regex: '(\d+[\.,]\d{2})'
   discount_regex: '(-?\d{1,3})\s*%'
   unit_price_regex: '(\d+[\.,]\d{2})\s*€?\s*/\s*(\d+)\s*(ml|g)'
