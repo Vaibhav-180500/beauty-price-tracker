@@ -24,8 +24,8 @@ amazon_fr:
    # Accept FR or EN (in case UI is in English). In my case parser can match either.
   in_stock_text: "En stock|In stock"
   oos_text: "Actuellement indisponible|Currently unavailable"
-  price_regex: "(\d+[\.,]\d{2})"
-  discount_regex: "(-?\d{1,3})\s*%"
+  price_regex: '(\d+[\.,]\d{2})'
+  discount_regex: '(-?\d{1,3})\s*%'
   
   currency_hint: "EUR"
   notes: "Amazon DOM varies by seller; ensure the URL pins the correct variant/size."
@@ -46,8 +46,8 @@ carrefour_fr:
   availability_selector: "button[data-test*='add-to-cart'], button[data-testid*='add-to-cart'], [data-test='post-add-to-cart'], [class*='add-to-cart']"
   in_stock_text: "Ajouter au panier|Voir les options d'achat|Voir les options d’achat|Add to cart|Add to basket|See buying options|See purchase options"
   oos_text: "Indisponible|Rupture|Victime de son succès|Unavailable|Out of stock|Sold out|Temporarily unavailable"
-  price_regex: "(\d+[\.,]\d{2})"
-  discount_regex: "(-?\\d{1,3})\\s*%"
+  price_regex: '(\d+[\.,]\d{2})'
+  discount_regex: '(-?\\d{1,3})\\s*%'
 
   currency_hint: "EUR"
   notes: "Carrefour PDPs sometimes render client-side; allow a few seconds before parsing if using headless."
@@ -89,9 +89,9 @@ sephora_fr:
   in_stock_text: "En stock|Disponible|In stock|Available"
   oos_text: "Rupture|Indisponible|Victime de son succès|Out of stock|Unavailable|Sold out"
 
-  price_regex: "(\d+[\.,]\d{2})"
-  discount_regex: "(-?\\d{1,3})\\s*%"
-  unit_price_regex: "(\d+[\\.,]\d{2})\\s*€?\\s*/\\s*(\d+)\s*(ml|g)"
+  price_regex: '(\d+[\.,]\d{2})'
+  discount_regex: '(-?\\d{1,3})\\s*%'
+  unit_price_regex: '(\d+[\\.,]\d{2})\\s*€?\\s*/\\s*(\d+)\s*(ml|g)'
   currency_hint: "EUR"
   
   notes: "Sephora often has multiple sizes/variants on the same PDP; keep URL + variant_id consistent."
