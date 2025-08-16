@@ -122,14 +122,16 @@ def extract_with_fallback(soup: BeautifulSoup, sel: dict) -> tuple[float | None,
     price = None
     if sel.get("price_selector"):
         el = soup.select_one(sel["price_selector"])
-        if el: price = norm_price(el.get_text(" ", strip=True))
+        if el:
+            price = norm_price(el.get_text(" ", strip=True))
     if price is None:
         price = norm_price(soup.get_text(" ", strip=True))
         if price is None:
             jl_price, _, _ = jsonld_offers(soup)
-            if jl_price is not None: price = jl_price
+            if jl_price is not None:
+                price = jl_price
 
-    # LIST (first visible, non unit-price)
+    # LIST (first visible, non unit-price, not hidden)
     list_price = None
     list_sel = sel.get("list_price_selector") or sel.get("sale_price_selector")
     if list_sel:
@@ -150,8 +152,20 @@ def extract_with_fallback(soup: BeautifulSoup, sel: dict) -> tuple[float | None,
             disc = parse_discount_text(el.get_text(" ", strip=True))
 
     compute_from_list = sel.get("compute_discount_from_list_price", True)
+
+    # If list looks like a unit price (e.g., €230.00 / l got through) or is wildly large vs price,
+    # and a discount badge exists, recompute list from price/discount.
+    if (disc is not None) and (price is not None):
+        if (list_price is None) or (list_price and price and (list_price > price * 3)):
+            # derive list from price and badge
+            try:
+                list_price = round(price / (1.0 - disc), 2)
+            except ZeroDivisionError:
+                pass
+
+    # If still no discount and allowed by policy, compute from list
     if disc is None and compute_from_list and (price is not None) and (list_price and list_price > 0):
-        if (list_price - price) >= 0.5:  # guard against tiny deltas/rounding
+        if (list_price - price) >= 0.5:   # guard against rounding
             disc = max(0.0, min(1.0, (list_price - price) / list_price))
 
     # AVAILABILITY
@@ -162,7 +176,8 @@ def extract_with_fallback(soup: BeautifulSoup, sel: dict) -> tuple[float | None,
             btn = el.select_one(
                 "button#add-to-cart, button[name='add'], button[data-event='addToCart'], button[type='submit']"
             )
-            if btn: el = btn
+            if btn:
+                el = btn
         txt = el.get_text(" ", strip=True) if el else ""
         if el and el.name == "button":
             classes = " ".join(el.get("class", [])).lower()
@@ -174,16 +189,23 @@ def extract_with_fallback(soup: BeautifulSoup, sel: dict) -> tuple[float | None,
                 or "add-to-cart-disabled" in classes
                 or "notify" in classes
             )
-            if disabled_attr: instock = False
+            if disabled_attr:
+                instock = False
         if instock is None:
             instock = is_in_stock(txt, sel.get("in_stock_text",""), sel.get("oos_text",""))
 
+    # Fallbacks: JSON-LD / microdata / page-wide text scan
     if instock is None:
         _, _, jl_in = jsonld_offers(soup)
-        if jl_in is not None: instock = jl_in
+        if jl_in is not None:
+            instock = jl_in
     if instock is None:
         md_in = microdata_availability(soup)
-        if md_in is not None: instock = md_in
+        if md_in is not None:
+            instock = md_in
+    if instock is None:
+        page_txt = soup.get_text(" ", strip=True)
+        instock = is_in_stock(page_txt, sel.get("in_stock_text",""), sel.get("oos_text",""))
 
     return price, list_price, disc, instock
 
