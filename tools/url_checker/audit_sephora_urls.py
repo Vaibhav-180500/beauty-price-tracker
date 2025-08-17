@@ -2,7 +2,7 @@ import csv, pathlib, re, time
 import requests
 from bs4 import BeautifulSoup
 
-ROOT = pathlib.Path(__file__).resolve().parents[1]
+ROOT = pathlib.Path(__file__).resolve().parents[2]
 SRC = ROOT / "dbt/seeds/sku_registry.csv"
 OUT = ROOT / "data/sephora_url_audit.csv"
 OUT.parent.mkdir(parents=True, exist_ok=True)
