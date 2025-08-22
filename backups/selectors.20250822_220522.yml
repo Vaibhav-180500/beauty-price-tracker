@@ -1,0 +1,88 @@
+# selectors_v2.yml — only Amazon FR & Sephora FR enabled here.
+# We keep Carrefour parked (disabled) for now.
+
+amazon_fr:
+  enabled: true
+  rate_limit_seconds: 20
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+  # Current price (Buy Box)
+  price_selector: "#corePrice_feature_div .a-price .a-offscreen"
+
+  # List/was (strike) — aim only at the strike container
+  list_price_selector: >
+    #corePrice_feature_div span.a-price.a-text-price span.a-offscreen,
+    #corePrice_feature_div [data-a-strike='true'] span.a-offscreen
+
+  # Savings percent badge
+  discount_selector: >
+    #corePrice_feature_div .savingsPercentage,
+    #apex_desktop .savingsPercentage,
+    .reinventPriceSavingsPercentageMargin .savingsPercentage
+
+  # Availability: cover more containers (inside Buy Box too)
+  availability_selector: >
+    #availabilityInsideBuyBox_feature_div,
+    #availability,
+    #availability span,
+    #add-to-cart-button,
+    #buy-now-button
+
+  in_stock_text: "In stock|En stock"
+  oos_text: "Currently unavailable|Actuellement indisponible|Temporarily out of stock"
+
+  price_regex: '(\d+[\.,]\d{2})'
+  discount_regex: '(-?\d{1,3})\s*%'
+
+  currency_hint: "EUR"
+  notes: "Prefer #corePrice_feature_div; if list price is actually unit price, the tester will recompute from discount."
+
+carrefour_fr:
+  enabled: false
+  rate_limit_seconds: 20
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+sephora_fr:
+  enabled: true
+  rate_limit_seconds: 20
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+  price_selector: >
+    .product-price .price-sales,
+    [data-comp='Price'] .Text,
+    .Price .Text,
+    [itemprop='price']
+
+  # Visible "was" price only (ignore hidden/unit price)
+  list_price_selector: >
+    .product-price .price-standard,
+    .Price .is-crossed,
+    [data-testid='price-was'],
+    [class*='strike']
+
+  # Only trust explicit badges; do not compute from list price here
+  discount_selector: >
+    [data-testid='promo-badge'],
+    .Badge--discount,
+    [class*='discount'],
+    [class*='promotion']
+  compute_discount_from_list_price: false
+
+  availability_selector: >
+    button#add-to-cart,
+    button[name="add"],
+    button[data-event="addToCart"],
+    form[id^="dwfrm_product_addtocart"] button[type="submit"],
+    .product-stock-content,
+    .product__stock,
+    .product-purchase
+
+  in_stock_text: "Ajouter au panier|En stock|Disponible|In stock|Available"
+  oos_text: "Rupture|Victime de son succès|Indisponible|Out of stock|Unavailable|Sold out|Me prévenir|Notify me"
+
+  price_regex: '(\d+[\.,]\d{2})'
+  discount_regex: '(-?\d{1,3})\s*%'
+  unit_price_regex: '(\d+[\.,]\d{2})\s*€?\s*/\s*(\d+)\s*(ml|g)'
+  currency_hint: "EUR"
+
+  notes: "Ignore unit price & hidden nodes; only report discount with an explicit badge or clearly visible struck price."
