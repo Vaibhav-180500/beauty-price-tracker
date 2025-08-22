@@ -1,0 +1,14 @@
+sku_id,brand,product_name,old_url,status,final_url,canonical_url,note
+HAIR-001,Olaplex,No.3 Hair Perfector,https://www.sephora.fr/p/no.-3-hair-perfector-P2526003.html,403,https://www.sephora.fr/p/no.-3-hair-perfector-P2526003.html,,http_403
+HAIR-002,Olaplex,No.4 Bond Maintenance Shampoo,https://www.sephora.fr/p/no.-4-bond-maintenance-shampoo---shampoing-P5727043.html,403,https://www.sephora.fr/p/no.-4-bond-maintenance-shampoo---shampoing-P5727043.html,,http_403
+HAIR-003,Kérastase,Elixir Ultime L’Huile Originale,https://www.sephora.fr/p/elixir-ultime-l-huile-originale---huile-capillaire-P3710009.html,403,https://www.sephora.fr/p/elixir-ultime-l-huile-originale---huile-capillaire-P3710009.html,,http_403
+HAIR-004,Redken,All Soft Shampoo,https://www.sephora.fr/p/all-soft-shampoo---shampoing-douceur-absolute-P10027755.html,403,https://www.sephora.fr/p/all-soft-shampoo---shampoing-douceur-absolute-P10027755.html,,http_403
+HAIR-005,Moroccanoil,Treatment Original,https://www.sephora.fr/p/treatment---huile-capillaire-soin-P10011158.html,403,https://www.sephora.fr/p/treatment---huile-capillaire-soin-P10011158.html,,http_403
+SKIN-001,The Ordinary,Niacinamide 10% + Zinc 1%,https://www.sephora.fr/p/niacinamide-10-zinc-1---serum-anti-imperfections-P10027945.html,403,https://www.sephora.fr/p/niacinamide-10-zinc-1---serum-anti-imperfections-P10027945.html,,http_403
+SKIN-002,Clinique,Dramatically Different Moisturizing Gel,https://www.sephora.fr/p/dramatically-different-moisturizing-gel---gel-hydratant-P1353048.html,403,https://www.sephora.fr/p/dramatically-different-moisturizing-gel---gel-hydratant-P1353048.html,,http_403
+SKIN-003,Estée Lauder,Advanced Night Repair Serum,https://www.sephora.fr/p/advanced-night-repair---serum-complexe-regeneration-intense-P10010128.html,403,https://www.sephora.fr/p/advanced-night-repair---serum-complexe-regeneration-intense-P10010128.html,,http_403
+MAKE-001,Too Faced,Better Than Sex Mascara,https://www.sephora.fr/p/better-than-sex-mascara-P1501003.html,403,https://www.sephora.fr/p/better-than-sex-mascara-P1501003.html,,http_403
+MAKE-002,Benefit,Roller Lash,https://www.sephora.fr/p/roller-lash-mascara-P2101001.html,403,https://www.sephora.fr/p/roller-lash-mascara-P2101001.html,,http_403
+MAKE-003,NARS,Radiant Creamy Concealer,https://www.sephora.fr/p/radiant-creamy-concealer---anti-cernes-eclat-P1281016.html,403,https://www.sephora.fr/p/radiant-creamy-concealer---anti-cernes-eclat-P1281016.html,,http_403
+MAKE-004,Huda Beauty,Liquid Matte,https://www.sephora.fr/p/liquid-matte-rouge-a-levres-mat-longue-tenue-ultra-confort-et-sans-transfert-P10023807.html,403,https://www.sephora.fr/p/liquid-matte-rouge-a-levres-mat-longue-tenue-ultra-confort-et-sans-transfert-P10023807.html,,http_403
+MAKE-010,NARS,Blush,https://www.sephora.fr/p/talc-free-blush---blush-P10058831.html,403,https://www.sephora.fr/p/talc-free-blush---blush-P10058831.html,,http_403
