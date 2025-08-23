@@ -1,0 +1,5 @@
+run_id,observed_at_utc,sku_id,retailer,brand,product_name,category,subcategory,size_value,size_unit,price,list_price,discount_pct,in_stock,currency,http_status,product_url,parse_error
+efdf1334fe76,2025-08-23T19:24:30Z,HAIR-001,amazon_fr,Olaplex,No.3 Hair Perfector,Haircare,Treatment,100,ml,23.0,230.0,0.22,True,EUR,200,https://www.amazon.fr/dp/B08TWTQDCX,
+efdf1334fe76,2025-08-23T19:24:52Z,HAIR-002,amazon_fr,Olaplex,No.5 Bond Maintenance - Revitalizing Conditioner,Haircare,Conditioner,250,ml,23.0,92.0,0.22,True,EUR,200,https://www.amazon.fr/dp/B08TWV3S41,
+efdf1334fe76,2025-08-23T19:24:52Z,HAIR-001,sephora_fr,Olaplex,No.3 Hair Perfector,Haircare,Treatment,100,ml,29.9,,0.25,True,EUR,200,https://www.sephora.fr/p/no.-3-hair-perfector-P2526003.html,
+efdf1334fe76,2025-08-23T19:25:14Z,HAIR-002,sephora_fr,Olaplex,No.5 Bond Maintenance - Revitalizing Conditioner,Haircare,Conditioner,100,ml,17.5,,0.25,True,EUR,200,https://www.sephora.fr/p/n%C2%B05-bond-maintenance-%E2%84%A2----apres-shampoing-revitalisant-format-voyage-706381.html,
