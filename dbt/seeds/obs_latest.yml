@@ -1,0 +1,23 @@
+version: 2
+seeds:
+  - name: obs_latest
+    config:
+      column_types:
+        run_id: string
+        observed_at_utc: timestamp
+        sku_id: string
+        retailer: string
+        brand: string
+        product_name: string
+        category: string
+        subcategory: string
+        size_value: float
+        size_unit: string
+        price: float
+        list_price: float
+        discount_pct: float
+        in_stock: boolean
+        currency: string
+        http_status: integer
+        product_url: string
+        parse_error: string
