@@ -7,6 +7,7 @@ analysis-paths: ['analyses']
 seed-paths: ['dbt/seeds']
 macro-paths: ['dbt/macros']
 snapshot-paths: ['dbt/snapshots']
+test-paths: ['dbt/tests']
 models:
   beauty_price_tracker:
     +materialized: view
