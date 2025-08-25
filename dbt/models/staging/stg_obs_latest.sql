@@ -11,7 +11,7 @@ with src as (
     safe_cast(discount_pct   as numeric)                   as discount_pct,     -- source column is 'disc'
     safe_cast(in_stock as bool)                    as in_stock,
     -- ISO8601 string -> TIMESTAMP (UTC)
-    safe.parse_timestamp('%Y-%m-%dT%H:%M:%S%z', observed_at_utc) as observed_at_utc
+    cast(observed_at_utc as timestamp)   as observed_at_utc
   from {{ ref('obs_latest') }}
 )
 
