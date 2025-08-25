@@ -26,4 +26,4 @@ select
   in_stock,
   observed_at_utc as last_seen_at_utc
 from ranked
-where rn = 1;
+where rn = 1
