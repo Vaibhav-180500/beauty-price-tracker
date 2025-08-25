@@ -2,6 +2,9 @@ version: 2
 models:
   - name: current_prices
     description: Latest observed price per (retailer, product_url) from stg_obs_latest.
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [retailer, product_url]
     columns:
       - name: retailer
         tests: [not_null]
