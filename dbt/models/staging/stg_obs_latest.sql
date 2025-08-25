@@ -21,7 +21,7 @@ select
   http_status,
   price,
   list_price,
-  discount,
+  discount_pct,
   in_stock,
   observed_at_utc
 from src
