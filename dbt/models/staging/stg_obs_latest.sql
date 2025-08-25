@@ -5,13 +5,13 @@ with src as (
   select
     retailer,
     product_url,
-    safe_cast(status as int64)                 as http_status,
-    safe_cast(price as numeric)                as price,
-    safe_cast(`list` as numeric)               as list_price,     -- backticks because `list` is a reserved word
-    safe_cast(disc as numeric)                 as discount,       -- <- was `discount` before; source has `disc`
-    safe_cast(in_stock as bool)                as in_stock,
+    safe_cast(status as int64)                     as http_status,
+    safe_cast(price  as numeric)                   as price,
+    safe_cast(`list` as numeric)                   as list_price,   -- backticks: list is a reserved word
+    safe_cast(disc   as numeric)                   as discount,     -- source column is 'disc'
+    safe_cast(in_stock as bool)                    as in_stock,
     -- ISO8601 string -> TIMESTAMP (UTC)
-    safe.parse_timestamp('%Y-%m-%dT%H:%M:%S%Ez', observed_at_utc) as observed_at_utc
+    safe.parse_timestamp('%Y-%m-%dT%H:%M:%S%z', observed_at_utc) as observed_at_utc
   from {{ ref('obs_latest') }}
 )
 
@@ -24,4 +24,4 @@ select
   discount,
   in_stock,
   observed_at_utc
-from src;
+from src
