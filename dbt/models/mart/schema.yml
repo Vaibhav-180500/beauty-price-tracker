@@ -1,0 +1,15 @@
+version: 2
+models:
+  - name: current_prices
+    description: Latest observed price per (retailer, product_url) from stg_obs_latest.
+    columns:
+      - name: retailer
+        tests: [not_null]
+      - name: product_url
+        tests: [not_null]
+      - name: last_seen_at_utc
+        tests: [not_null]
+      - name: price
+      - name: list_price
+      - name: discount_pct
+      - name: in_stock
